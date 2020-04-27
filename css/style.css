@@ -1,0 +1,416 @@
+/*---------------------RESET CSS-------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*---------------------RESET CSS-------------------------*/
+/*--------------------- GENERAL -------------------------*/
+/* COLOR
+color 1 = FFE3AA
+color 2 = F3C466
+color 3 = D6A33E
+color 4 = B6841F
+color 5 = 906308
+*/
+html {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1rem;
+    line-height: 1.65;
+    background-color: #fff;
+    color: #444;
+}
+
+a{
+    text-decoration: none;
+}
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+/*--------------------- GENERAL -------------------------*/
+
+/*--------------------- HEADER -------------------------*/
+
+/*--------------------- HEADER -------------------------*/
+
+/*--------------------- BANNER -------------------------*/
+.containerBanner {
+  /*height:100vh;*/
+  display:flex;
+  /*position:relative;*/
+  text-align:center;
+}
+
+.containerBanner h1{
+  margin:0 auto;
+  width:100%;
+  position:absolute;
+  top:25%;
+  z-index: 100;
+  color:#F3C466;
+}
+.containerBanner h3{
+  margin:0 auto;
+  width:100%;
+  position:absolute;
+  top:50%;
+  z-index: 100;
+  color:#FFE3AA;
+}
+
+.item{
+  width:100%;
+  height:100vh;
+  filter: brightness(75%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.containerBanner ul{
+  width:100%;
+  display:flex;
+  position:absolute;
+  top:75%;
+  z-index: 100;
+  /*color:#FFE3AA;*/
+  justify-content:space-evenly;
+}
+
+.containerBanner li>a{
+  text-decoration: none;
+  font-size:20px;
+  color:white;
+  transition:0.3s;
+}
+
+.containerBanner li>a:hover{
+  font-size:22px;
+  color:#906308;
+  text-shadow:0 0 5px #FFE3AA, 0 0 10px #FFE3AA;
+}
+
+.test{
+  display:flex;
+  height:100vh;
+}
+
+.bannerDisplaySmall{
+ display: none;
+}
+
+
+
+/*+++++++++++++BANNER RESPONSIVE++++++++++++++++++++++*/
+
+@media screen and (max-width:767px){
+  .banner{
+    display:none;
+  }
+
+  .bannerDisplaySmall{
+    display:flex;
+    background-image: url("../img/4.jpg");
+    width:100%;
+    height:100vh;
+    filter: brightness(75%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index:99;
+  }
+
+  .verticalMiddle{
+    display: flex;
+    align-items: center;
+  }
+
+  .cardBanner{
+    margin:0 auto;
+    text-align:center;
+    color:white;
+  }
+
+
+}
+
+@media screen and (min-width:768px){
+  .navbarPerso{
+    background-color:#F3C466;
+  }
+}
+
+/*+++++++++++++BANNER RESPONSIVE++++++++++++++++++++++*/
+
+/*--------------------- BANNER -------------------------*/
+
+/*--------------------- NAVBAR -------------------------*/
+
+nav{
+  margin:0 1.5em;
+}
+
+.navbarPerso{
+  line-height:4rem;
+  height:2.5em;
+  margin:0 auto;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 100;
+  padding: 0 5%;
+  color:white;
+}
+
+.fixed {
+  background-color:#F3C466;
+  opacity: 0.8;
+}
+
+
+.menuList{
+  display:flex;
+}
+
+.menuList i{
+  padding-top:1em;
+}
+
+.menuList input{
+  vertical-align: middle;
+  height:22px;
+}
+
+.button-navbar-search{
+  background-color:lightgrey;
+  padding-bottom:10px;
+  margin-right:10px;
+}
+
+.option{
+  background: none;
+  border:none;
+  font-size:14px;
+  text-decoration: none;
+}
+
+
+.active{
+  text-shadow: 0 0 5px #FFE3AA, 0 0 10px #FFE3AA;
+}
+
+
+/*--------------------- NAVBAR -------------------------*/
+
+/*--------------------- MAIN -------------------------*/
+
+#aboutUs{
+  margin:2em auto;
+}
+
+main h2, main h3{
+  color:#B6841F;
+}
+
+
+#firstParaRenew img{
+  width:100%;
+  margin:2em 0;
+  border:5px solid #F3C466;
+}
+
+#secondParaRenew iframe{
+  border:5px solid #F3C466;
+}
+
+.trait{
+  width:100px;
+  border:2px solid #F3C466;
+}
+
+/*CARD*/
+.card-room {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin:2em 0;
+}
+
+.card-room > img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-room h2 {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-room p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+  color:black;
+}
+
+
+.card-room .card-room-infos {
+  padding: 2em 0 0 1.5em;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-room-pricing {
+  color:black;
+  font-size:10px;
+  margin: 0;
+  position:absolute;
+  right:-10px;
+  bottom:-15px;
+}
+
+.card-room-infos{
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+.cliquable-card a{
+  text-decoration:none;
+}
+/*CARD*/
+
+/*SLIDER RESTAURANT*/
+#slider{
+  width: 80%;
+  max-width: 500px;
+  overflow: hidden;
+  margin:0 auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
+}
+
+#slider figure img{
+  width: 20%;
+  height: auto;
+  float: left;
+}
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+/*SLIDER RESTAURANT*/
+
+/*--------------------- MAIN -------------------------*/
+
+
+/*--------------------- FOOTER -------------------------*/
+
+footer{
+  margin:0 auto;
+  text-align:center;
+}
+
+.footer {
+  background: #f1e8e9;
+  /*height: 100px;*/
+  width:100%;
+  padding: 25px 50px;
+  color: rgba(0,0,0,0.3);
+}
+
+.footer p{
+  font-style:italic;
+  color:black;
+}
+.footer-links {
+  /*display: flex;*/
+  margin:0 auto;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+
+
+/*--------------------- FOOTER -------------------------*/
+

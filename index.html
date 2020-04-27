@@ -6,57 +6,233 @@
   <meta name="Author" content="François NGUYEN">
   <meta description="L'hôtel PARIMIS est un établissement de grand standing 5 étoiles situé à Paris. Cet hôtel de luxe parisien offre un marge panel de services à ses hôtes.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
   <nav>
-
-  </nav>
-  <div class="banner">
-    <h2>Carousel Example</h2>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="img/luxeroom.jpg" alt="Chambre de luxe" style="width:100%;">
+    <div class="navbarPerso">
+      <div class="logo">
+        <a href="index.html">
+        Hotel PARIMIS
+        </a>
       </div>
-
-      <div class="item">
-        <img src="img/restaurant.jpg" alt="restaurant" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="img/spa.jpg" alt="spa" style="width:100%;">
+      <div class="menuList">
+        <form action="#">
+          <input type="text" placeholder="Rechercher">
+          <input type="submit" class="button-navbar-search" value="OK">
+        </form>
+        <button class="option">
+          <i class="fas fa-bars"> Menu</i>
+        </button>
+        <button class="option active">
+          FR
+        </button>
+        <div class="option">
+          <p> / </p>
+        </div>
+        <button class="option">
+          ENG
+        </button>
       </div>
     </div>
+    <aside class="slideBarMenu">
 
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
+    </aside>
+  </nav>
+  <div class="banner">
+    <div class="containerBanner">
+      <h1>Hôtel PARIMIS</h1>
+      <h3>Découvrez notre panel de services hôteliers <strong>haut de gammes</strong> <br> <br>Notre savoir-faire mis à profit pour votre bien être grâce à :</h3>
+      <ul class="bannerList">
+        <li><a href="#roomService">Nos chambres</a></li>
+        <li><a href="#restaurantService">Notre restaurant</a></li>
+        <li><a href="#spaService">Notre SPA</a></li>
+      </ul>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/1.jpg" alt="Chambre de luxe" class="imgCarousel">
+        </div>
+
+        <div class="item">
+          <img src="img/2.jpg" alt="restaurant" class="imgCarousel">
+        </div>
+
+        <div class="item">
+          <img src="img/3.jpg" alt="spa" class="imgCarousel">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bannerDisplaySmall">
+    <div class="container verticalMiddle">
+      <div class="cardBanner">
+        <div class="logo">HOTEL PARIMIS</div>
+        <h3>test</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo molestias, eius eveniet. Consectetur, corporis, doloremque iusto aperiam ipsum maiores beatae nam expedita autem. Ut, ducimus quas quisquam aliquid voluptas magni?</p>
+      </div>
     </div>
   </div>
 </header>
 
 <main>
   <div class="container">
+    <section id="aboutUs">
+      <article id="firstParaRenew">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <h3>Renouveau dans Paris</h3>
+            <hr class="trait">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aperiam explicabo earum incidunt esse quis vero necessitatibus a quos eaque assumenda distinctio, atque fuga, alias, facere. Assumenda animi, molestiae rerum!</p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <img src="img/5.jpg" alt="Entrée de l'hôtel Parimis">
+            </div>
+          </div>
+      </article>
+      <hr>
+      <article id="secondParaRenew">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6401922469686!2d2.2998897156746234!3d48.865071179288186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Avenue%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1587642195100!5m2!1sfr!2sfr" width="100%" height="300" frameborder="0" style="border:5px solid #F3C466; margin:2em 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <h3>Plan d'accès</h3>
+            <hr class="trait">
+            <p>En plein coeur de Paris, facile d'accès et proche de monuments</p>
+            </div>
+          </div>
+      </article>
+    </section>
+    <hr>
+    <section id="roomService">
+      <h2>Nos chambres</h2>
+      <p>Une séléction de chambres variées selon votre budget, mais toujours dans le confort et le luxe.</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="#" style="text-decoration: none">
+            <div class="card-room">
+              <img src="img/classique.jpg" alt="Une chambre classique">
+              <div class="card-room-infos">
+                <div>
+                  <h2>Chambre classique</h2>
+                  <p>Le luxe à moindre prix</p>
+                </div>
+                <h4 class="card-room-pricing">à partir de 99.99€</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="#" style="text-decoration: none">
+            <div class="card-room">
+              <img src="img/confort.jpg" alt="Une chambre confort">
+              <div class="card-room-infos">
+                  <div>
+                    <h2>Chambre confort</h2>
+                    <p>Lit douillet Queen-size</p>
+                  </div>
+                <h4 class="card-room-pricing">à partir de 199.99€</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="#" style="text-decoration: none">
+            <div class="card-room">
+              <img src="img/deluxe.gif" alt="Une chambre deluxe">
+              <div class="card-room-infos">
+                  <div>
+                    <h2>Chambre deluxe</h2>
+                    <p>Double lit Kingsize</p>
+                  </div>
+                <h4 class="card-room-pricing">à partir de 499.99€</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="#" style="text-decoration: none">
+            <div class="card-room">
+              <img src="img/suite.jpg" alt="Une chambre suite">
+              <div class="card-room-infos">
+                  <div>
+                    <h2>Suite</h2>
+                    <p>Un studio 5 étoiles</p>
+                  </div>
+                <h4 class="card-room-pricing">à partir de 999.99€</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="restaurantService">
+      <h2>Notre restaurant</h2>
+      <p>Un restaurant gastronomique avec chef étoilé</p>
+      <p>3 cartes de plats différentes selon la journée :</p>
+      <ul>
+        <li>Carte du matin</li>
+        <li>Carte du midi</li>
+        <li>Carte de la soirée</li>
+      </ul>
+      <div id="slider">
+        <figure>
+          <img src="img/cuisine1.jpg" alt="">
+          <img src="img/cuisine2.jpg" alt="">
+          <img src="img/cuisine3.jpg" alt="">
+          <img src="img/cuisine4.jpg" alt="">
+          <img src="img/cuisine1.jpg" alt="">
+        </figure>
+      </div>
+      <h4><a href="">Plus de détails sur nos cartes</a></h4>
 
+    </section>
+    <section id="spaService">
+      <h2>Notre spa</h2>
+      <p>Des professionnels de santé au service de votre détente et profitez de nos équipements luxueux</p>
+      <div id="slider">
+        <figure>
+          <img src="img/spa1.jpg" alt="">
+          <img src="img/spa2.jpg" alt="">
+          <img src="img/spa3.jpg" alt="">
+          <img src="img/spa4.jpg" alt="">
+          <img src="img/spa1.jpg" alt="">
+        </figure>
+      </div>
+      <h4><a href="">Plus de détails sur nos spas</a></h4>
+    </section>
   </div>
 </main>
+
+<footer>
+  <div class="footer">
+    <div class="logo">HOTEL PARIMIS</div>
+    <p class="adresse">1, avenue Montaigne 75008 Paris FRANCE</p>
+    <div class="footer-links">
+      <a href="tel:0102030405"><i class="fas fa-phone-square"></i></i></a>
+      <a href="mailto:news@parimis-hotel.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="copyright">
+      <p>&copy;2020 Hotel Parimis - Contact - CGV - Mentiens légales - </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/7555007718.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
