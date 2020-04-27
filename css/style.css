@@ -86,12 +86,13 @@ a{
   text-align:center;
 }
 
-.containerBanner h1{
+.containerBanner img{
   margin:0 auto;
-  width:100%;
+/*  width:100%;*/
   position:absolute;
   top:25%;
-  z-index: 100;
+  left:40%;
+  z-index: 99;
   color:#F3C466;
 }
 .containerBanner h3{
@@ -99,7 +100,7 @@ a{
   width:100%;
   position:absolute;
   top:50%;
-  z-index: 100;
+  z-index: 99;
   color:#FFE3AA;
 }
 
@@ -118,7 +119,7 @@ a{
   display:flex;
   position:absolute;
   top:75%;
-  z-index: 100;
+  z-index: 99;
   /*color:#FFE3AA;*/
   justify-content:space-evenly;
 }
@@ -390,6 +391,41 @@ main h2, main h3{
 }
 /*SLIDER RESTAURANT*/
 
+/*RESTAURANT.HTML*/
+
+.card-restaurant{
+  margin:0 auto;
+  padding:1em;
+  width:75%;
+  display:flex;
+  border:2px solid #B6841F;
+  border-radius:10px;
+  justify-content: space-around;
+}
+
+.card-restaurant-info{
+  width:120%;
+  margin-left:1em;
+}
+
+.card-restaurant-info h4{
+  color:#F3C466;
+}
+
+.card-restaurant img{
+  width:40%;
+  height:auto;
+}
+
+@media screen and (max-width:767px){
+  .card-restaurant{
+    width:100%;
+    display:block;
+  }
+}
+
+
+/*RESTAURANT.HTML*/
 /*--------------------- MAIN -------------------------*/
 
 
