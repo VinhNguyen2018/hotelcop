@@ -198,8 +198,8 @@ nav{
 }
 
 .navbarPerso{
-  line-height:4rem;
-  height:2.5em;
+  /*line-height:2rem;*/
+  height:4em;
   margin:0 auto;
   width:100%;
   display:flex;
@@ -222,13 +222,18 @@ nav{
   display:flex;
 }
 
-.menuList i{
-  padding-top:1em;
+.menuList p{
+  line-height: 4em;
+  margin: auto;
 }
 
 .menuList input{
   vertical-align: middle;
   height:22px;
+}
+
+.menuList form{
+  margin: auto;
 }
 
 .button-navbar-search{
@@ -249,10 +254,21 @@ nav{
   text-shadow: 0 0 5px #FFE3AA, 0 0 10px #FFE3AA;
 }
 
+.logo-navbar img{
+  height:65px;
+}
+
+.logo img{
+  height:100px;
+}
 
 /*--------------------- NAVBAR -------------------------*/
 
 /*--------------------- MAIN -------------------------*/
+
+#first-section{
+  padding-top:50px;
+}
 
 #aboutUs{
   margin:2em auto;
@@ -385,6 +401,7 @@ footer{
 }
 
 .footer {
+  margin-top:50px;
   background: #f1e8e9;
   /*height: 100px;*/
   width:100%;
