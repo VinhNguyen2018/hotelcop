@@ -417,6 +417,15 @@ main h2, main h3{
   height:auto;
 }
 
+.card-spa{
+/*  margin:0 auto;*/
+ /* padding:1em;*/
+  width:100%;
+  height:auto;
+  display:flex;
+  /*justify-content: space-around;*/
+}
+
 @media screen and (max-width:767px){
   .card-restaurant{
     width:100%;
