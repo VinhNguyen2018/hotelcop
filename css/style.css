@@ -146,13 +146,23 @@ a{
  display: none;
 }
 
+.navbarPersoSmall{
+  display:none;
+}
 
-
-/*+++++++++++++BANNER RESPONSIVE++++++++++++++++++++++*/
+/*+++++++++++++BANNER & NAVBAR RESPONSIVE++++++++++++++++++++++*/
 
 @media screen and (max-width:767px){
   .banner{
     display:none;
+  }
+
+  .navbarPerso{
+    display:none !important;
+  }
+
+  .navbarPersoSmall{
+    display:flex !important;
   }
 
   .bannerDisplaySmall{
@@ -265,6 +275,9 @@ nav{
 
 /*--------------------- NAVBAR -------------------------*/
 
+/*+++++++++++++NAVBAR RESPONSIVE++++++++++++++++++++++*/
+
+/*+++++++++++++NAVBAR RESPONSIVE++++++++++++++++++++++*/
 /*--------------------- MAIN -------------------------*/
 
 #first-section{
@@ -419,16 +432,25 @@ main h2, main h3{
 
 .card-spa{
 /*  margin:0 auto;*/
- /* padding:1em;*/
+  padding:1em;
   width:100%;
   height:auto;
   display:flex;
-  /*justify-content: space-around;*/
+  justify-content: space-between;
+}
+
+.card-spa img{
+  padding:1.5em;
+  width:auto;
+  height:auto;
 }
 
 @media screen and (max-width:767px){
   .card-restaurant{
     width:100%;
+    display:block;
+  }
+  .card-spa{
     display:block;
   }
 }
